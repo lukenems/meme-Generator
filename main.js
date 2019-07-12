@@ -1,9 +1,14 @@
-console.log('running')
-let button = document.querySelector('button')
-let imgUrl = document.querySelector('#url')
+
+let button = document.querySelector('button');
+let memeArea = document.querySelector('.meme-area');
 
 button.addEventListener('click', function(){
-    alert(imgUrl.value)
+    event.preventDefault()
+    let imgUrl = document.querySelector('#url').value;
+    console.log('url(' + imgUrl + ');');
+    let newDiv = document.createElement('div');
+    newDiv.style.background = 'url(' +imgUrl+ ')';
+    memeArea.insertAdjacentElement('beforeend', newDiv);
+    document.querySelector('#url').value = '';
 })
 
-console.log(imgUrl)

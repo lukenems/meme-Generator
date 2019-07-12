@@ -1,0 +1,22 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-text{
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.meme-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    height: 400px;
+    width: 400px;
+    margin: 1rem auto;
+}
