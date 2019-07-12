@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meme Generator</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <form>
+            <input type="text" id="top_text" maxlength="70" placeholder="Top Text">
+            <input type="text" id="bottom_text" maxlength="70" placeholder="Bottom Text">
+            <input type="url" name="url" id="url"
+                placeholder="Enter Image URL"
+                pattern="https://.*" size="30"
+                required>
+            <button id="submit" type="submit">Build Meme</button>
+        </form>
+    </body>
+    <script src="main.js"></script>
+</html>
