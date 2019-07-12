@@ -1,4 +1,9 @@
 console.log('running')
-let imgUrl = document.getElementById('url')
+let button = document.querySelector('button')
+let imgUrl = document.querySelector('#url')
+
+button.addEventListener('click', function(){
+    alert(imgUrl.value)
+})
 
 console.log(imgUrl)
