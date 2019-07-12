@@ -5,7 +5,7 @@ form {
     align-items: center;
 }
 
-.meme-text{
+form input{
     width: 40%;
     margin: 1rem auto;
 }
@@ -13,10 +13,24 @@ form {
 .meme-area {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-around;
+    margin: auto;
 }
 
 div {
-    height: 400px;
-    width: 400px;
+    max-height: 400px;
+    max-width: 30%;
     margin: 1rem auto;
+    position: relative;
+    text-align: center;
 }
+
+img{
+    max-width: 400px;
+}
+
+div p{
+    position: absolute;
+    top: 10px;
+}
+
