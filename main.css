@@ -1,3 +1,28 @@
+html {
+    font-family: 'Tillana';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(#6bc26d, #fff645);
+}
+
+header h4 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+h4:last-child{
+    margin-bottom: 0;
+}
+
+hr{
+    margin-top: 0;
+
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -5,7 +30,7 @@ form {
     align-items: center;
 }
 
-form input{
+form input {
     width: 40%;
     margin: 1rem auto;
 }
@@ -17,7 +42,7 @@ form input{
     margin: auto;
 }
 
-div {
+.meme {
     /* max-height: 400px;
     max-width: 30%; */
     margin: 1rem auto;
