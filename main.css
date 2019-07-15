@@ -18,19 +18,36 @@ form input{
 }
 
 div {
-    max-height: 400px;
-    max-width: 30%;
+    /* max-height: 400px;
+    max-width: 30%; */
     margin: 1rem auto;
     position: relative;
-    text-align: center;
+    align-items: center;
 }
 
 img{
     max-width: 400px;
+    margin: auto;
 }
 
-div p{
+.text {
     position: absolute;
+    max-width: 75%;
+    font-family: 'Viga', sans-serif;
+    font-size: 1.5em;
+    color: #faebd7;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top{
     top: 10px;
+}
+
+#bottom{
+    bottom: 10px;
 }
 
