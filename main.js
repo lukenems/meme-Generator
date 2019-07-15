@@ -3,7 +3,6 @@ let button = document.querySelector('button');
 let memeArea = document.querySelector('.meme-area');
 
 button.addEventListener('click', function(){
-    console.log(event)
     event.preventDefault()
     let imgUrl = document.querySelector('#url').value;
     if(imgUrl === '' || !imgUrl.includes('http')){
@@ -17,6 +16,11 @@ button.addEventListener('click', function(){
 
     let newDiv = document.createElement('div');
     newDiv.classList.add('meme');
+    newDiv.addEventListener('click', function(){
+        if(confirm("Are you sure you want to delete this meme?")){
+        newDiv.remove();
+        } return
+    })
     let image = document.createElement('img');
     image.src = imgUrl;
 
@@ -25,13 +29,11 @@ button.addEventListener('click', function(){
     topText.innerHTML = top;
     topText.classList.add('text');
     topText.id = 'top';
-    topText.unselectable = 'on';
 
     let bottomText = document.createElement('p');
     bottomText.innerHTML = bottom;
     bottomText.classList.add('text');
     bottomText.id = 'bottom'
-    bottomText.unselectable = 'on';
 
     memeArea.insertAdjacentElement('beforeend', newDiv);
     newDiv.insertAdjacentElement('beforeend', image);
@@ -42,4 +44,8 @@ button.addEventListener('click', function(){
     document.querySelector('#top_text').value = '';
     document.querySelector('#bottom_text').value = '';
 })
+
+
+
+
 
