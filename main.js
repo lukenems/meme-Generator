@@ -4,6 +4,8 @@ let memeArea = document.querySelector('.meme-area');
 
 button.addEventListener('click', function(){
     event.preventDefault()
+    let fontColor = document.querySelector('#fontColor').checked;
+
     let imgUrl = document.querySelector('#url').value;
     if(imgUrl === '' || !imgUrl.includes('http')){
         document.querySelector('#url').value = '';
@@ -34,6 +36,12 @@ button.addEventListener('click', function(){
     bottomText.innerHTML = bottom;
     bottomText.classList.add('text');
     bottomText.id = 'bottom'
+
+    if(fontColor){
+        console.log('checked')
+        topText.style.color = 'black';
+        bottomText.style.color = 'black';
+    }
 
     memeArea.insertAdjacentElement('beforeend', newDiv);
     newDiv.insertAdjacentElement('beforeend', image);
