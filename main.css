@@ -90,6 +90,7 @@ img:hover{
     margin-right: auto;
     user-select: none;
     text-transform: uppercase;
+    word-break: break-all;
 }
 
 #top{
