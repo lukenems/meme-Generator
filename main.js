@@ -1,9 +1,8 @@
-
 let button = document.querySelector('button');
 let memeArea = document.querySelector('.meme-area');
 
 button.addEventListener('click', function(){
-    event.preventDefault()
+    event.preventDefault();
     let fontColor = document.querySelector('#fontColor').checked;
 
     let imgUrl = document.querySelector('#url').value;
@@ -21,7 +20,7 @@ button.addEventListener('click', function(){
     newDiv.addEventListener('click', function(){
         if(confirm("Are you sure you want to delete this meme?")){
         newDiv.remove();
-        } return
+        } return;
     })
     let image = document.createElement('img');
     image.src = imgUrl;
@@ -35,10 +34,9 @@ button.addEventListener('click', function(){
     let bottomText = document.createElement('p');
     bottomText.innerHTML = bottom;
     bottomText.classList.add('text');
-    bottomText.id = 'bottom'
+    bottomText.id = 'bottom';
 
     if(fontColor){
-        console.log('checked')
         topText.style.color = 'black';
         bottomText.style.color = 'black';
     }
@@ -51,9 +49,4 @@ button.addEventListener('click', function(){
     document.querySelector('#url').value = '';
     document.querySelector('#top_text').value = '';
     document.querySelector('#bottom_text').value = '';
-})
-
-
-
-
-
+});
